@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">LeagueQuiz</string>
+    <string name="welcome_text">League of Legends Champion Quiz</string>
+    <string name="player1">1-Player</string>
+    <string name="player2">2-Player</string>
+    <string name="Qlist">Question List</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+    <string name="next_button">Next</string>
+    <string name="skip_button">Skip</string>
+    <string name="cheat_button">Cheat</string>
+    <string name="cheat_toast_true">The answer is true!</string>
+    <string name="cheat_toast_false">The answer is false!</string>
+    <string name="question_ashe">Ashe is the ruler of the Avarosan tribe.
+    </string>
+    <string name="question_diana">Diana is a worshiper of the sun.
+    </string>
+    <string name="question_yi">Master Yi is Wukongs apprentice</string>
+    <string name="question_vi">Vi is a warden of Piltover.
+    </string>
+    <string name="question_azir">Azir is part of the Ascended race.
+    </string>
+    <string name="question_graves">Grave\'s first name is Malcom.</string>
+    <string name="question_kayle">Kayle and Morgana are sisters.</string>
+    <string name="question_darius">Darius is a captain in the Noxian army.</string>
+    <string name="question_nunu">Nunu is the name of the yeti and not its rider.</string>
+    <string name="question_braum">Braum is the friend of all Poros.</string>
+    <string name="highscore_title"><u>Highscores</u></string>
+    <string name="menu_button">Main Menu</string>
+    <string name="score_title">Your score is:</string>
+    <string name="player_next">Continue to Player 2</string>
+    <string name="name_text">Please enter your name in the box below; letters only and up to 10 of them. Pressing enter will take you to the quiz and will confirm your question choices.
+    </string>
+    <string name="name_box">Your Name</string>
+    <string name="enter_button">Enter</string>
+    <string name="help_setting">Help</string>
+    <string name="menu_action_about_us">About us</string>
+    <string name="checkbox_explanation">If you don\'t want to do any of these questions below, please check the box parallel to the question.</string>
+
+</resources>
