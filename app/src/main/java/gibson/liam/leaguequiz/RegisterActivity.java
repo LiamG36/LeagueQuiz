@@ -12,16 +12,22 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.CheckBox;
 import android.support.v7.widget.Toolbar;
-
 import org.apache.commons.lang3.StringUtils;
+
+/*
+The RegisterActivity class is where the players name is inputted and also where the player selects
+the questions they don't want to do. Every player will go through this screen before they start the
+quiz. Contains a toolbar along the top with a main menu button and a help button.
+ */
 
 public class RegisterActivity extends AppCompatActivity {
 
     static String name;
-
+    /*
+    An array of the checkboxes; false indicating that it isn't checked and the question is included,
+    true indicating the box is checked and the question is to be skipped.
+     */
     static boolean questionChecked[] = {false, false, false, false, false, false, false, false, false, false};
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +54,12 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v){
                 EditText mNameText = (EditText)findViewById(R.id.user_name);
                 name = mNameText.getText().toString();
+                //Checks if the entered name complies with the parameters.
                 if (name.length() > 10 || name.length() < 1 || StringUtils.isAlpha(name) == false){
                     Toast.makeText(getApplicationContext(), "Please re-enter your name within the correct parameters listed above", Toast.LENGTH_LONG).show();
-                } else {
+                }
+                //Checks if each of the checkboxes is ticked and sets the corresponding array element to true if so.
+                else {
                     if (mCB1.isChecked()){
                         questionChecked[0] = true;
                     }
@@ -81,10 +90,13 @@ public class RegisterActivity extends AppCompatActivity {
                     if (mCB10.isChecked()){
                         questionChecked[9] = true;
                     }
+                    //Checks whether all the checkboxes were ticked.
                     if (areAllTrue(questionChecked) == true){
                         Toast.makeText(getApplicationContext(), "You must have at least one question unchecked to take the quiz", Toast.LENGTH_LONG).show();
                         setAllFalse(questionChecked);
-                    } else{
+                    }
+                    //Takes you to the quiz activity once all criteria has been met.
+                    else{
                 Intent i = new Intent(RegisterActivity.this, QuizActivity.class);
                 startActivity(i);}
                     }
@@ -92,14 +104,14 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
     }
-
+    //Checks if every checkbox in the array has been ticked.
     private boolean areAllTrue(boolean[] array){
         for (int i = 0; i < array.length; i++) {
             if (!array[i]) return false;
         }
         return true;
     }
-
+    //Sets all the elements in the array to false ready for re-entry.
     private void setAllFalse(boolean[] array){
         for (int i = 0; i < array.length; i++) {
             questionChecked[i] = false;
@@ -112,7 +124,7 @@ public class RegisterActivity extends AppCompatActivity {
         mMenuInflater.inflate(R.menu.my_menu, menu);
         return true;
     }
-
+    //The Toolbar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == R.id.action_setting){

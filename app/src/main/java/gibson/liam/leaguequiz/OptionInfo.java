@@ -1,7 +1,8 @@
 package gibson.liam.leaguequiz;
 
 /**
- * Created by Liam on 29/12/2016.
+ * Holds the strings used for the Help section on the toolbar in two seperate arrays that match
+ * up with each other.
  */
 
 public class OptionInfo {

@@ -1,8 +1,11 @@
 package gibson.liam.leaguequiz;
 
 /**
- * Created by Liam on 20/12/2016.
+ The question class contains the getters for the changing of the question. It gets the string and
+ image resource, and also whether the answer was true or false.
  */
+
+
 
 public class Questions {
 

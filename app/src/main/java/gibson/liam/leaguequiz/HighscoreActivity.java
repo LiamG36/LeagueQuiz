@@ -11,6 +11,11 @@ import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.Arrays;
 
+/*
+The HighscoreActivity is where the users scores are displayed in descending order(Highest to lowest)
+The array is sorted via the score portion of the objects and then displayed as a list
+ */
+
 public class HighscoreActivity extends AppCompatActivity {
 
     private Button mMenuButton;
@@ -34,10 +39,12 @@ public class HighscoreActivity extends AppCompatActivity {
 
     }
 
+    //Outputs the highscores
     private void output(Memory[] aMemoryList){
-        Memory[] displayCopy = aMemoryList;
-        Arrays.sort(displayCopy, Memory.SCORE_COMPARATOR);
+        Memory[] displayCopy = aMemoryList; //Copy of the array so original data isn't altered.
+        Arrays.sort(displayCopy, Memory.SCORE_COMPARATOR); //Sorts the array via the scores.
         TextView scoreList = (TextView)findViewById(R.id.highscore_scores);
+        //Scores are set to the screen in the sorted descending order.
         scoreList.setText(Utils.memoryToString(displayCopy));
     }
 }

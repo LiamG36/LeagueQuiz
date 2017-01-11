@@ -3,7 +3,7 @@ package gibson.liam.leaguequiz;
 import java.util.Comparator;
 
 /**
- * Created by Liam on 28/12/2016.
+ * Dunno yet
  */
 
 public class Memory{
@@ -26,7 +26,7 @@ public class Memory{
         score = scoreValue;
     }
 
-
+    //Compares the score elements of each object in the array against each other and orders them in descending order
     public static Comparator<Memory> SCORE_COMPARATOR = new Comparator<Memory>() {
         @Override
         public int compare(final Memory o1, final Memory o2) {
