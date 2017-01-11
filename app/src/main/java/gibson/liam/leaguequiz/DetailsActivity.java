@@ -4,13 +4,6 @@ import android.app.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
-/**
- * Created by Liam on 29/12/2016.
- */
-
-import android.app.Activity;
-import android.content.res.Configuration;
-import android.os.Bundle;
 
 /*
 This class contributes into creating the help fragment in the toolbar by bringing together some
