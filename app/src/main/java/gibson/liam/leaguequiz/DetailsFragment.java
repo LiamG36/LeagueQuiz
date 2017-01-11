@@ -9,6 +9,11 @@ import android.view.ViewGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+/*
+This class helps put the fragment onto the screen and allows the user to scroll through and select
+different options in the help screen.
+ */
+
 public class DetailsFragment extends Fragment {
 
     //Creates a DetailsFragment that contains the help data for the correct index

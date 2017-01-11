@@ -3,7 +3,8 @@ package gibson.liam.leaguequiz;
 import java.util.Comparator;
 
 /**
- * Dunno yet
+ *This class sets the name and scores into an object to be put into the array. Also contains the
+ * comparator that orders the objects in the array by their score.
  */
 
 public class Memory{

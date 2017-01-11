@@ -9,7 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 /**
- * Created by Liam on 29/12/2016.
+ * This class helps display the array of strings onto the screen through a fragment. Gathers the
+ * strings and arranges them in the fragmentLayout.
  */
 
 
@@ -91,7 +92,9 @@ public class TitlesFragment extends ListFragment {
                 ft.commit();
             }
 
-        } else {
+        }
+        //Defines and launches a new activity to show the DetailsFragment
+        else {
             Intent intent = new Intent();
             intent.setClass(getActivity(), DetailsActivity.class);
             intent.putExtra("index", index);

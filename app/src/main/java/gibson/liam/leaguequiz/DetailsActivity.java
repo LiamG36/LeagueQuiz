@@ -12,6 +12,11 @@ import android.app.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
+/*
+This class contributes into creating the help fragment in the toolbar by bringing together some
+components and also checking the savestate and orientation of the device.
+ */
+
 public class DetailsActivity extends Activity {
 
     @Override

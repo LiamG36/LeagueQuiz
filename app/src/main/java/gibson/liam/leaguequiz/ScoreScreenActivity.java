@@ -13,7 +13,8 @@ import static gibson.liam.leaguequiz.MainMenu.scoreName;
 The ScoreScreen activity is used to display the score after 1-player quiz and to display the score
 of the second player in a 2-player quiz. It is also where the players name and score is paired as
 an object and inputted into the array. The values used during the quiz such as the score and
-question index are reset for the next quiz after the previous players scores are recorded.
+question index are reset for the next quiz after the previous players scores are recorded. Has
+buttons leading to the main menu and highscore screens.
  */
 
 public class ScoreScreenActivity extends AppCompatActivity {

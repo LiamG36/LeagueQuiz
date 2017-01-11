@@ -18,7 +18,8 @@ import android.widget.TextView;
 The QuizActivity class runs the quiz. It deals with changing and setting the questions and
 associated images, checking whether the answer was true or false, displaying a toast depending
 on the answer, handling the cheat, skip, true and false buttons ,and also dealing with changing
-the score when appropriate. Also contains the same toolbar from RegisterActivity.
+the score when appropriate. Also contains the same toolbar from RegisterActivity. Transitions to
+either the ScoreScreenActivity or ScoreScreen2PlayerActivity at the end of the quiz.
  */
 
 public class QuizActivity extends AppCompatActivity {
@@ -85,7 +86,7 @@ public class QuizActivity extends AppCompatActivity {
             int questionimage = mQuestionBank[mCurrentIndex].getImageResId();
             mQuestionImageView.setImageResource(questionimage);
         }
-        //Takes the player to the scorescreen.
+        //Takes the player to the relevant scorescreen.
         else {
             //Only used when 2-player mode was selected for the 1st player.
             if (MainMenu.player2>0){

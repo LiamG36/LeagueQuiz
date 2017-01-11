@@ -1,7 +1,7 @@
 package gibson.liam.leaguequiz;
 
 /**
- * Created by Liam on 28/12/2016.
+ * This class builds string through concatenation of all Memory element strings
  */
 
 public class Utils {
@@ -10,6 +10,10 @@ public class Utils {
 
         for (Memory memory : myMemoryArray) {
             if(memory != null) {
+                /*
+                Utilise memory.toString() rather than Array.toString() so that class specific
+                toString is respected, appending newlines and returning custom data
+                 */
                 builder.append(memory.toString());
             }
         }

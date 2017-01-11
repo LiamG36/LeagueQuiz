@@ -12,7 +12,8 @@ import static gibson.liam.leaguequiz.MainMenu.scoreName;
 /*
 The ScoreScreen2PlayerActivity is used to display the score after the first player completes the
 quiz when the 2-player mode is selected. Similarly to ScoreScreen activity it inputs the players
-name and score into an array and resets the values for the next quiz.
+name and score into an array and resets the values for the next quiz. Contains a button which starts
+the quiz for the second player.
  */
 
 public class ScoreScreen2PlayerActivity extends AppCompatActivity {

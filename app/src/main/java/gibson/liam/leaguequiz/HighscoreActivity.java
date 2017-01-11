@@ -12,8 +12,9 @@ import org.apache.commons.lang3.ArrayUtils;
 import java.util.Arrays;
 
 /*
-The HighscoreActivity is where the users scores are displayed in descending order(Highest to lowest)
-The array is sorted via the score portion of the objects and then displayed as a list
+The HighscoreActivity is where the users scores are displayed in descending order(Highest to lowest).
+The array is sorted via the score portion of the objects and then displayed as a list. Can return to
+the main menu via a button.
  */
 
 public class HighscoreActivity extends AppCompatActivity {
